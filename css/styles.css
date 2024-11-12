@@ -1,0 +1,103 @@
+:root {
+  --yellow: #f4d04e;
+  --white: #ffffff;
+  --gray-500: #6b6b6b;
+  --gray-950: #121212;
+
+  --fs: 15px;
+  --main-font: "Figtree", sans-serif;
+  --fw-medium: 500;
+  --fw-black: 900;
+}
+
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--yellow);
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: var(--fs);
+}
+
+/*--------------------
+        CARD
+----------------------*/
+
+.card {
+  width: 18rem;
+  padding: 1em;
+  background-color: var(--white);
+  border: 1px solid var(--gray-950);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.card-body span {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: var(--fw-black);
+  background-color: var(--yellow);
+  color: var(--gray-950);
+}
+
+.card-date {
+  margin: 0.8rem 0;
+  font-size: 0.7rem;
+  font-weight: var(--fw-medium);
+}
+
+.card-tile {
+  font-weight: var(--fw-black);
+  color: var(--gray-950);
+}
+
+.card-title:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  line-height: 18px;
+  color: var(--gray-500);
+}
+
+.card-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-footer img {
+  width: 2rem;
+}
+
+.card-footer p {
+  font-weight: 600;
+  color: var(--fw-black);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
